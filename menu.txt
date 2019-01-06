@@ -1,0 +1,62 @@
+Executive Rajasthani Thali 	320.0	Red Chilli
+Special Dal Bati Thali 	240.0	Red Chilli
+Special Rajasthani Thali	200.0	Red Chilli
+Mini Thali	180.0	Red Chilli
+Masala Bati THALI	180.0	Red Chilli
+Fried Bati THALI	180.0	Red Chilli
+Regular Dal Bati	160.0	Red Chilli
+Jodhpuri Raj Kachori	80.0	Red Chilli
+Jodhpuri Onion Kachori(2 PCS)	60.0	Red Chilli
+Dal Kachori(2 PCS)	60.0	Red Chilli
+Kachori chaat	50.0	Red Chilli
+Sp.Marwadi Papad Churi	50.0	Red Chilli
+Crispy Wheat Chips Chaat	50.0	Red Chilli
+Dahi Vada	60.0	Red Chilli
+Khichiya	30.0	Red Chilli
+Masala Khichiya	50.0	Red Chilli
+Masala Khichiya Cheese	80.0	Red Chilli
+Papad	20.0	Red Chilli
+Masala Papad	40.0	Red Chilli
+Masala Papad Cheese	60.0	Red Chilli
+Gatte Ki Sabji	150.0	Red Chilli
+Govind Gatte Ki Sabji	100.0	Red Chilli
+Gulab Jamun Ki Sabji	120.0	Red Chilli
+Aloo Jodhpuri	100.0	Red Chilli
+Aloo Mewari	120.0	Red Chilli
+Aloo Bangan	90.0	Red Chilli
+Aloo Pyaaz	90.0	Red Chilli
+Sev Tamata	90.0	Red Chilli
+Mirchi Tamata (Spicy)	90.0	Red Chilli
+Papad Ki Sabji	80.0	Red Chilli
+Methi Papad Ki Sabji	100.0	Red Chilli
+Rabodi/Rabodi Pyaaz Ki Sabji	100.0	Red Chilli
+Vaadi/ Vaadi Pyaaz Ki Sabji	100.0	Red Chilli
+Ker Sangria	150.0	Red Chilli
+Dahi Onion Fry	70.0	Red Chilli
+Plani Kadi/Harra Pyaaz Ki Kadi	90.0	Red Chilli
+Bati	20.0	Red Chilli
+Masala Bati	35.0	Red Chilli
+Fried Bati	30.0	Red Chilli
+Bhakri	20.0	Red Chilli
+Bajre Ka Rotla	20.0	Red Chilli
+Khoba Wali Roti	30.0	Red Chilli
+Fhulka Roti	10.0	Red Chilli
+Tukkad Roti	50.0	Red Chilli
+Puri(5 pcs)	25.0	Red Chilli
+GHATTA PULAV WITH DAHI 	120.0	Red Chilli
+RAJASTHANI MASALA PULAV 	100.0	Red Chilli
+VAGHARELO ROTLA	120.0	Red Chilli
+VAGHARELO BATI 	110.0	Red Chilli
+SP. CHURMA DRY FRUIT LADOO	80.0	Red Chilli
+GULAB JAMUN ( 2 pcs )	40.0	Red Chilli
+RASGULLA ( 2 pcs )	40.0	Red Chilli
+RABDI	60.0	Red Chilli
+CHASS 	30.0	Red Chilli
+BUNDI RAITA	60.0	Red Chilli
+MIX VEG. RAITA	50.0	Red Chilli
+LASSI ( Mango / Rose )	60.0	Red Chilli
+JAL JEERA	20.0	Red Chilli
+EXTRA GHEE 	30.0	Red Chilli
+EXTRA GUD 	10.0	Red Chilli
+Gulaab Jaamu	126.0	Red Chilli
+Special Rajasthani Dahi	123.0	Red Chilli

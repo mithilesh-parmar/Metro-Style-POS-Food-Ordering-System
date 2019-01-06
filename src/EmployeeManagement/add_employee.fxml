@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+    <DialogPane
+            fx:id="dialogRoot"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="EmployeeManagement.AddEmployeeController"
+            stylesheets="@/Styles/dialog_dark_style.css"
+    >
+
+        <headerText>
+            ADD NEW Employee
+        </headerText>
+
+        <content>
+            <GridPane hgap="20" vgap="10">
+
+                <Label  text="Name" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                <TextField fx:id="employeeName" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+                <Label text="Aadhar Number" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                <TextField fx:id="employeeAadharNumber" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+
+                <Label text="Age" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+                <TextField fx:id="employeeAge" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+
+                <Label text="Salary" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+                <TextField fx:id="employeeSalary" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+
+                <Label text="Restaurant" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+                <VBox spacing="10"
+                      GridPane.columnIndex="2"
+                      GridPane.rowIndex="5"
+                      GridPane.rowSpan="2">
+                    <RadioButton fx:id="redChilliButton"
+                                 text="Red Chilli"
+                                 style=" -fx-font-size: 11pt;-fx-font-family: Segoe UI Semibold;-fx-text-fill: white;-fx-opacity: 1;"
+                                 selected="true"
+                    />
+                    <RadioButton fx:id="rajasthaniRasoiButton"
+                                 text="Rajasthani Rasoi"
+                                 style=" -fx-font-size: 11pt;-fx-font-family: Segoe UI Semibold;-fx-text-fill: white;-fx-opacity: 1;"
+                    />
+                </VBox>
+
+            </GridPane>
+        </content>
+
+
+    </DialogPane>
+
+

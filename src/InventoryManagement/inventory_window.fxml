@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="InventoryManagement.InventoryWindowController"
+            >
+
+    <left>
+
+        <GridPane hgap="20" vgap="20">
+            <padding><Insets topRightBottomLeft="20"/> </padding>
+            <Label text="Add Item To Inventory" GridPane.rowIndex="0"
+                   GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+
+            <Label text="Name" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="inventoryItemName" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Quantity" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="inventoryItemQuantity" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Total Spent" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="inventoryItemPrice" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label text="Date" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="inventoryItemPurchaseDate" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+            <Button text="Add" GridPane.rowIndex="5"
+                    GridPane.columnIndex="1" GridPane.columnSpan="2" onAction="#handleAddButtonAction"/>
+
+        </GridPane>
+
+    </left>
+
+    <center>
+        <TableView fx:id="tableView" onKeyPressed="#handleOnKeyPressedInTable">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"></TableView>
+            </columnResizePolicy>
+            <columns>
+
+                <TableColumn fx:id="dateCol" text="Date">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="itemPurchaseDate"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="nameCol" text="Name" >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="itemName"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="quantityCol" text="Quantity">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="itemQuantity"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="priceCol" text="Total Price">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="itemPrice"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>

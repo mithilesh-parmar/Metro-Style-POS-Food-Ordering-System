@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="EmployeeManagement.EmployeeManagementController"
+            stylesheets="@/Styles/dartk_metro_style.css"
+            fx:id="mainBorderPane"
+            >
+
+    <top>
+        <ToolBar prefHeight="35" style="-fx-background-color: #1d1d1d1d">
+            <HBox>
+                <Button fx:id="addNewEmployeeButton" onAction="#showAddEmployeeDialog">
+                    <graphic>
+                        <ImageView fitHeight="20" fitWidth="15">
+                            <Image url="/Resources/add_icon.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </HBox>
+        </ToolBar>
+    </top>
+
+    <left>
+        <ListView fx:id="employeeList"
+                  onMouseClicked="#handleOnMouseClickedInEmployeeList"
+                  onKeyPressed="#handleOnKeyPressedInEmployeeList"
+
+        >
+
+        </ListView>
+    </left>
+
+    <center >
+      <VBox spacing="15" fx:id="detailView">
+
+
+          <Label fx:id="nameLabel" >
+              <font>
+                  <Font name="Segoe UI Semibold" size="450"/>
+              </font>
+          </Label>
+
+          <TilePane hgap="20" vgap="20">
+
+              <Button  prefHeight="160" prefWidth="250" >
+                  <graphic>
+                      <HBox spacing="4" alignment="CENTER">
+                          <Label text="Total Present: " />
+                          <Label fx:id="totalPresentLabel"/>
+                      </HBox>
+                  </graphic>
+              </Button>
+
+              <Button prefHeight="160" prefWidth="250" >
+                  <graphic>
+                      <HBox spacing="4" alignment="CENTER">
+                          <Label text="Total Absent: " />
+                          <Label fx:id="totalAbsentLabel"/>
+                      </HBox>
+                  </graphic>
+              </Button>
+
+              <!--onAction="#updateAadharNumber"-->
+              <Button  prefHeight="160" prefWidth="250" >
+                  <graphic>
+                      <VBox spacing="4" alignment="CENTER">
+                          <Label text="Aadhar Number " />
+                          <Label fx:id="aadharNumberLabel"/>
+                      </VBox>
+                  </graphic>
+              </Button>
+
+              <!--onAction="#updateRestaurant"-->
+              <Button  prefHeight="160" prefWidth="250" >
+                  <graphic>
+                      <HBox spacing="4" alignment="CENTER">
+                          <Label text="Working In" />
+                          <Label fx:id="restaurantLabel"/>
+                      </HBox>
+                  </graphic>
+              </Button>
+              <ToggleButton
+                            fx:id="attendanceToggleButton"
+                            prefHeight="160"
+                            prefWidth="250"
+                            onAction="#updateAttendance">
+
+              </ToggleButton>
+
+          </TilePane>
+      </VBox>
+    </center>
+</BorderPane>

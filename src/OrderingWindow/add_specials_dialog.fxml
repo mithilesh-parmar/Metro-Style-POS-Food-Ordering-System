@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane
+            fx:id="dialogRoot"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="OrderingWindow.AddSpecialsDialogController"
+            stylesheets="@/Styles/dialog_dark_style.css"
+        >
+
+    <headerText>
+        ADD NEW DISH
+    </headerText>
+
+    <content>
+        <GridPane hgap="20" vgap="10">
+
+            <Label  text="Name" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <TextField fx:id="dishName" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+            <Label text="Price" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <TextField fx:id="dishPrice" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+
+            <Label text="Restaurant" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            <VBox spacing="10"
+                  GridPane.columnIndex="2"
+                  GridPane.rowIndex="3"
+                  GridPane.rowSpan="2">
+                <RadioButton fx:id="redChilliButton"
+                             text="Red Chilli"
+                             style=" -fx-font-size: 11pt;-fx-font-family: Segoe UI Semibold;-fx-text-fill: white;-fx-opacity: 1;"
+                             selected="true"
+                />
+                <RadioButton fx:id="rajasthaniRasoiButton"
+                             text="Rajasthani Rasoi"
+                             style=" -fx-font-size: 11pt;-fx-font-family: Segoe UI Semibold;-fx-text-fill: white;-fx-opacity: 1;"
+                />
+            </VBox>
+
+            <Label text="Is Permanent"
+                   GridPane.rowIndex="5"
+                   GridPane.columnIndex="1"/>
+            <VBox spacing="10"
+                  GridPane.columnIndex="2"
+                  GridPane.rowIndex="5"
+                  GridPane.rowSpan="2">
+                <RadioButton fx:id="isPermanentYesButton"
+                             text="Yes"
+                             style=" -fx-font-size: 11pt;-fx-font-family: Segoe UI Semibold;-fx-text-fill: white;-fx-opacity: 1;"
+
+                />
+                <RadioButton fx:id="isPermanentNoButton"
+                             text="No"
+                             style=" -fx-font-size: 11pt;-fx-font-family: Segoe UI Semibold;-fx-text-fill: white;-fx-opacity: 1;"
+                             selected="true"
+                />
+            </VBox>
+
+
+
+            <!--TODO add an option for adding dish to specials menu or permanenty menu-->
+        </GridPane>
+    </content>
+
+
+</DialogPane>

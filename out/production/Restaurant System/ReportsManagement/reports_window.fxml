@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="rootPane"
+            maxHeight="-Infinity"
+            maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ReportsManagement.ReportsWindowController"
+>
+
+
+   <children>
+      <LineChart fx:id="monthlySaleLineChart">
+
+          <xAxis >
+          <NumberAxis fx:id="saleForMonth"  />
+        </xAxis>
+
+        <yAxis>
+          <NumberAxis fx:id="monthNumber"  />
+        </yAxis>
+
+      </LineChart>
+   </children>
+
+</AnchorPane>
