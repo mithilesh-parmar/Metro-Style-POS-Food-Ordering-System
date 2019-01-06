@@ -1,5 +1,5 @@
 # POS-Food-Ordering-System
-Food ordering system based on token system
+Metro Style Food ordering system
 
 ## FEATURES
 
@@ -9,3 +9,11 @@ Food ordering system based on token system
 - Inventory Management 
 
 ## Screenshots
+
+<img src = "/Screenshots/screenshot_1.png" >
+
+<img src = "/Screenshots/screenshot_2.png" >
+
+<img src = "/Screenshots/screenshot_3.png" >
+
+<img src = "/Screenshots/screenshot_4.png" >
